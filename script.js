@@ -5,3 +5,7 @@ function Pizza(size, base) {
     this.veggieToppings = [];
     this.total = [];
   }
+  Pizza.prototype.toppingOptions = function(topping) {
+    this.meatToppings.push(topping);
+  }
+  
