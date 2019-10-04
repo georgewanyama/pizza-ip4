@@ -1,0 +1,43 @@
+body{
+  background: url('https://github.com/smayer0926/pizza-project/blob/master/img/pizza.jpeg?raw=true');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.col-md-12 {
+  display: none;
+  color: white;
+  background: #96cc9a;
+}
+.panel-body {
+  background: wheat;
+}
+
+.jumbotron {
+  background: inherit;
+  text-align: center;
+  color: white;
+}
+.btn {
+  background: #23af3f;
+  padding: 20px;
+  margin: 30px;;
+  display: block;
+  float: left;
+}
+.col-md-6 {
+  height: 250px;
+}
+#output {
+  font-size: 12pt;
+}
+#receipt {
+  font-size: 14pt;
+}
+h4 {
+  color:white;
+}
+.radio {
+  color: #0f471d;
+}   
