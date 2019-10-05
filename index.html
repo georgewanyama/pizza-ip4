@@ -7,143 +7,131 @@
     <title>pizza pizza</title>
     <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css" type="text/css">
     <script src="jquery-3.4.1.js"></script>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
     <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
-<body> 
-        <div class="container">
-                <div class="jumbotron">
-                  <h1><em>The hummy pizza resort come enjoy the pizza boom!!!!!</em></h1>
-                  <h3>Select a size, base and toppings.</h3>
-                </div>
-                <form id="pizzaorder">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4>What Size Pizza Would You Like?</h4>
-                        </div>
-                        <div class="panel-body">
-                          <div class="radio">
-                            <label>
-                              <input type="radio" name="sizes" value="Small">
-                              Small
-                            </label>
-                          </div>
-                          <div class="radio">
-                            <label>
-                            <input type="radio" name="sizes" value="Medium">
-                            Medium
-                            </label>
-                          </div>
-                          <div class="radio">
-                            <label>
-                            <input type="radio" name="sizes" value="Large">
-                            Large
-                            </label>
-                          </div>
-                          <div class="radio">
-                            <label>
-                            <input type="radio" name="sizes" value="XLarge">
-                            X-Large
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4>What would you like your base to be made of?</h4>
-                        </div>
-                        <div class="panel-body">
-                          <div class="radio">
-                            <label>
-                            <input type="radio" name="base" value="Tomato" >
-                            Tomato
-                            </label>
-                          </div>
-                          <div class="radio">
-                            <label>
-                            <input type="radio" name="base" value="Garlic">
-                            Creamy Garlic
-                            </label>
-                          </div>
-                          <div class="radio">
-                            <label>
-                            <input type="radio" name="base" value="Pesto">
-                            Pesto
-                            </label>
-                          </div>
-                          <div class="radio">
-                            <label>
-                            <input type="radio" name="base" value="Olive-Oil">
-                            Olive Oil
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div> 
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4>What meat topping would you like?</h4>
-                        </div>
-                        <div class="panel-body">
-                          <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni<br>
-                          <input type="checkbox" name="topping" value="Canadian-Bacon"> Canadian Bacon<br>
-                          <input type="checkbox" name="topping" value="Sausage"> Sausage<br>
-                          <input type="checkbox" name="topping" value="Salami"> Salami<br>
-                          <input type="checkbox" name="topping" value="Bacon"> Bacon<br>
-                          <input type="checkbox" name="topping" value="Chicken"> Chicken<br>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4>What type of vegetables would you like? </h4>
-                        </div>
-                        <div class="panel-body">
-                          <input type="checkbox" name="veggies" value="Pineapple"> Pineapple<br>
-                          <input type="checkbox" name="veggies" value="Tomato"> Tomatoes<br>
-                          <input type="checkbox" name="veggies" value="Mushroom"> Mushroom<br>
-                          <input type="checkbox" name="veggies" value="Olive"> Olives<br>
-                          <input type="checkbox" name="veggies" value="Pepper"> Green Peppers<br>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-3">
-                        <button type="submit" class="btn">Order the pizza!</button>
-                      </div>
-                    </div>
-                </form>
-                <div class="row">
-                  <div class="col-md-12">
-                    <h4>Your Order Total: </h4>
-                    <span id="output"></span>
-                    <h4>Order Receipt:</h4>
-                    <span id="receipt"></span>
-                  </div>
-                </div>
+<body>
+   
+  <div class="container">
+    <h1>pizza hub cafe</h1>
+    <div class="jumbotron">
+      <h1>Order a custom made pizza!</h1>
+      <h3>Select a size, base and toppings.</h3>
+    </div>
+    <form id="pizzaorder">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4>What Size Pizza Would You Like?</h4>
             </div>
-       
-                         
-                      
-                                    
-                    
-                    
-    
-                        
-                 
-        
-    
-            
-    
-            
+            <div class="panel-body">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="sizes" value="Small">
+                  Small
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                <input type="radio" name="sizes" value="Medium">
+                Medium
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                <input type="radio" name="sizes" value="Large">
+                Large
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                <input type="radio" name="sizes" value="XLarge">
+                X-Large
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4>What would you like your base to be made of?</h4>
+            </div>
+            <div class="panel-body">
+              <div class="radio">
+                <label>
+                <input type="radio" name="base" value="Tomato" >
+                Tomato
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                <input type="radio" name="base" value="Garlic">
+                Creamy Garlic
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                <input type="radio" name="base" value="Pesto">
+                Pesto
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                <input type="radio" name="base" value="Olive-Oil">
+                Olive Oil
+                </label>
+              </div>
+            </div>
+          </div>
+        </div> <!--column-->
+      </div><!--row-->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4>What meat topping would you like?</h4>
+            </div>
+            <div class="panel-body">
+              <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni<br>
+              <input type="checkbox" name="topping" value="Canadian-Bacon"> Canadian Bacon<br>
+              <input type="checkbox" name="topping" value="Sausage"> Sausage<br>
+              <input type="checkbox" name="topping" value="Salami"> Salami<br>
+              <input type="checkbox" name="topping" value="Bacon"> Bacon<br>
+              <input type="checkbox" name="topping" value="Chicken"> Chicken<br>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4>What type of vegetables would you like? </h4>
+            </div>
+            <div class="panel-body">
+              <input type="checkbox" name="veggies" value="Pineapple"> Pineapple<br>
+              <input type="checkbox" name="veggies" value="Tomato"> Tomatoes<br>
+              <input type="checkbox" name="veggies" value="Mushroom"> Mushroom<br>
+              <input type="checkbox" name="veggies" value="Olive"> Olives<br>
+              <input type="checkbox" name="veggies" value="Pepper"> Green Peppers<br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <button type="submit" class="btn">Order the pizza!</button>
+          </div>
+        </div>
+    </form>
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Your Order Total: </h4>
+        <span id="output"></span>
+        <h4>Order Receipt:</h4>
+        <span id="receipt"></span>
+      </div><!--column-->
+    </div>
+  </div><!--Container-->
 
             
  

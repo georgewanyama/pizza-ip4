@@ -1,3 +1,5 @@
+
+//Business Logic
 function Pizza(size, base) {
   this.sizes = size;
   this.base = base;
@@ -44,7 +46,7 @@ Pizza.prototype.Price = function() {
 Pizza.prototype.Receipt = function () {
   return "Thank You for your order. We see that you have ordered" + " a " + this.sizes + " pizza with " +  this.base + " and " + this.meatToppings + " " + this.veggieToppings + " your order will be ready shortly!"
 }
-
+//UI Logic
 $(function(){
   $("#pizzaorder").submit(function(event){
     event.preventDefault();
@@ -60,10 +62,9 @@ $(function(){
       newCost.veggieOptions($(this).val());
     });
     var totalprice = newCost.Price();
-    var totalprice = newCost.Price();
 
-    $(".col-md-12").show();
-    $("#output").text("$ " + totalprice);
-    $("#receipt").text(newCost.Receipt());
-});
+      $(".col-md-12").show();
+      $("#output").text("$ " + totalprice);
+      $("#receipt").text(newCost.Receipt());
+  });
 });
