@@ -54,5 +54,12 @@ h4 {
   color:black ;
   tab-size: 3vh;
   padding: 5%;
-}
+} 
+#nav{
+  display: block; 
+  text-align: center;
   
+}
+.aboutus{
+  color:white;
+}
