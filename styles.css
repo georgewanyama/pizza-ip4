@@ -34,6 +34,7 @@ body{
 }
 #receipt {
   font-size: 14pt;
+  color: #000;
 }
 h4 {
   color:white;
@@ -58,6 +59,8 @@ h4 {
 #nav{
   display: block; 
   text-align: center;
+  font-size: 8vh;
+  
   
 }
 .aboutus{

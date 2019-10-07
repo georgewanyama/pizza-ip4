@@ -16,28 +16,28 @@ Pizza.prototype.veggieOptions = function (topping) {
 Pizza.prototype.Price = function() {
   var cost = 0
   if (this.sizes === "Small") {
-    cost += 8.25
+    cost += 1000
   } else if (this.sizes === "Medium") {
-    cost += 11.50
+    cost += 2000
   } else if (this.sizes === "Large") {
-    cost += 14.25
+    cost += 4000
   } else if (this.sizes === "Xlarge") {
-    cost += 17.25
+    cost += 1000
   }
   if (this.base === "Tomato") {
     cost += 0
   } else if (this.base === "Garlic") {
-    cost += 1
+    cost += 1000
   } else if (this.base === "Pesto") {
-    cost += 1.50
+    cost += 3000
   } else if (this.base === "Olive-Oil") {
-    cost += 2
+    cost += 2000
   }
   this.meatToppings.forEach(function(){
-    cost += 4
+    cost += 400
   });
   this.veggieToppings.forEach(function(){
-    cost += 2
+    cost += 2000
   });
 
     this.total += cost
@@ -49,7 +49,7 @@ Pizza.prototype.Receipt = function () {
 //UI Logic
 $(function(){
   $("#pizzaorder").submit(function(event){
-    
+    event.preventDefault();
 
     var inputtedName = $("#name").val();
     var inputtedSizes = $("input:radio[name=sizes]:checked").val();
@@ -64,9 +64,8 @@ $(function(){
     var totalprice = newCost.Price();
 
       $(".col-md-12").show();
-      $("#output").text("$ " + totalprice);
+      $("#output").text("k.sh " + totalprice);
       $("#receipt").text(newCost.Receipt());
   });
-
-  event.preventDefault();
-})
+});
+ 
