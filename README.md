@@ -1,5 +1,3 @@
-### title 
-PIZZA project
 
  ### TITTLE
 PIZZA PROJECT

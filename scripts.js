@@ -3,7 +3,7 @@
 function Pizza(size, base) {
   this.sizes = size;
   this.base = base;
-  this.meatToppings = [];
+  this.meatToppings = []; 
   this.veggieToppings = [];
   this.total = [];
 }
@@ -49,7 +49,7 @@ Pizza.prototype.Receipt = function () {
 //UI Logic
 $(function(){
   $("#pizzaorder").submit(function(event){
-    event.preventDefault();
+    
 
     var inputtedName = $("#name").val();
     var inputtedSizes = $("input:radio[name=sizes]:checked").val();
@@ -67,4 +67,6 @@ $(function(){
       $("#output").text("$ " + totalprice);
       $("#receipt").text(newCost.Receipt());
   });
+
+  event.preventDefault();
 })
